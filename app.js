@@ -20,3 +20,7 @@ function changeColor() {
         })
     })
 }
+
+function textAlign(alignment){
+   document.getElementById('textarea').style.textAlign = alignment;
+}
