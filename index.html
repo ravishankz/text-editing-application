@@ -18,13 +18,13 @@
     <div>
         <div class="iconbar bg-dark">
             <button class="bold" onclick="bold()">
-                <img src="Resources/bold-xxl.png" width="27">
+                <img src="Resources/bold-xxl.png" width="24">
             </button>
             <button class="underline" onclick="underline()">
                 <img src="Resources/format_underline_white_192x192.png" width="33">
             </button>
             <button class="italic" onclick="italic()">
-                <img src="Resources/italic-xxl.png" width="33">
+                <img src="Resources/italic-xxl.png" width="25">
             </button>
             
             <button class="fontColor" onclick="changeColor()">
@@ -33,21 +33,21 @@
 
             <div class="alignment-buttons">
                 <button onclick="textAlign('left')">
-                    <img src="Resources/left.png" width="31">
+                    <img src="Resources/left.png" width="27">
                 </button>
                 <button onclick="textAlign('center')">
-                    <img src="Resources/center.png" width="31">
+                    <img src="Resources/center.png" width="27">
                 </button>
                 <button onclick="textAlign('right')">
-                    <img src="Resources/right.png" width="31">
+                    <img src="Resources/right.png" width="27">
                 </button>
                 <button onclick="textAlign('justify')">
-                    <img src="Resources/justify.png" width="31">
+                    <img src="Resources/justify.png" width="27">
                 </button>
             </div>
 
             <button onclick="undo()">
-                <img src="Resources/undo-4-32.png" width="31">
+                <img src="Resources/undo-4-32.png" width="30">
             </button>
 
             <button onclick="redo()">
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <div id="textarea" contenteditable="true"></div>
+    <div id="textarea" contenteditable="true" id="editableDiv"></div>
     
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
