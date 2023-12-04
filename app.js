@@ -24,3 +24,36 @@ function changeColor() {
 function textAlign(alignment){
    document.getElementById('textarea').style.textAlign = alignment;
 }
+
+var array = []
+var i = 0
+
+function undo(){
+    if (i > 0){
+        i--
+        updateUndoRedo()
+    }
+}
+
+function redo(){
+    if (i > 0){
+        i++
+        updateUndoRedo()
+    }
+}
+
+function updateUndoRedo(){
+    if (array[i] != undefined){
+        document.getElementById('textarea').innerHTML = array[i]
+    }
+}
+
+document.querySelectorAll('#textarea').forEach(function(element){
+    element.addEventListener('input', function(){
+        i++
+        if (i < array.length){
+            array = array.slice(0, i)
+        }
+        array.push(document.getElementById('textarea').innerHTML)
+    })
+})
